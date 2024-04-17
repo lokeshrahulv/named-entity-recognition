@@ -138,12 +138,13 @@ history = model.fit(
 metrics = pd.DataFrame(model.history.history)
 metrics.head()
 
-print("Lokesh Rahul V V /n 212222100024")
+print("Lokesh Rahul V V \n 212222100024")
 metrics[['accuracy','val_accuracy']].plot()
 
-print("Lokesh Rahul V V /n 212222100024")
+print("Lokesh Rahul V V \n 212222100024")
   metrics[['loss','val_loss']].plot()
 
+print("Lokesh Rahul V V \n 212222100024")
 i = 20
 p = model.predict(np.array([X_test[i]]))
 p = np.argmax(p, axis=-1)
@@ -156,9 +157,11 @@ for w, true, pred in zip(X_test[i], y_true, p[0]):
 ## OUTPUT
 
 ### Training Loss, Validation Loss Vs Iteration Plot
-
+![Screenshot 2024-04-17 143603](https://github.com/lokeshrahulv/named-entity-recognition/assets/118423842/5d058a3f-ac2c-4655-876e-c68adae90a44)
+![Screenshot 2024-04-17 143617](https://github.com/lokeshrahulv/named-entity-recognition/assets/118423842/b1693c48-ad03-4653-bbc0-86fb0691cfac)
 
 ### Sample Text Prediction
+![Screenshot 2024-04-17 143836](https://github.com/lokeshrahulv/named-entity-recognition/assets/118423842/97b7a745-2540-4db4-b563-dafce1044747)
 
 ## RESULT
 Thus, an LSTM-based model (bi-directional) for recognizing the named entities in the text is developed Successfully.
